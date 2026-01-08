@@ -61,14 +61,14 @@ function App() {
       {page === "coffee" && (
         <>
           <h1>Coffee Break</h1>
-          <p>The Admin Team are currently on a coffee break and will be back in 20 minutes</p>
+          <p>The Admin Team are currently on a coffee break and will be back soon</p>
         </>
       )}
 
       {page === "lunch" && (
         <>
           <h1>Lunch Break</h1>
-          <p>The Admin Team are currently on a lunch break and will be back in an hour</p>
+          <p>The Admin Team are currently on a lunch break and will be back soon</p>
         </>
       )}
     </div>
