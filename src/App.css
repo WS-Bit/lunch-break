@@ -1,0 +1,67 @@
+/* Reset everything */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Full screen container */
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #0f172a;
+  color: #f8fafc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+
+/* Floating control buttons */
+.buttons {
+  position: absolute;
+  top: 3vh;
+  display: flex;
+  gap: 2vw;
+}
+
+/* Buttons scale with screen size */
+button {
+  padding: 1.5vh 3vw;
+  font-size: 2vh;
+  border: none;
+  border-radius: 12px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* Headline scales for TVs */
+h1 {
+  font-size: clamp(4rem, 8vw, 8rem);
+  margin: 0 0 2vh 0;
+}
+
+/* Message text scales cleanly */
+p {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  max-width: 80vw;
+  line-height: 1.4;
+}
